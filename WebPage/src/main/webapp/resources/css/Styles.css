@@ -1,0 +1,9 @@
+@charset "ISO-8859-1";
+
+.form-container{
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	padding: 2em;
+	border: 1px solid red;
+}

@@ -1,0 +1,20 @@
+.custom-divider {
+	height: 5px;
+	background: rgb(255, 145, 0);
+	background: linear-gradient(90deg, rgba(255, 145, 0, 1) 0%,
+		rgba(9, 9, 121, 1) 15%, rgba(153, 7, 128, 1) 35%, rgba(5, 107, 186, 1)
+		59%, rgba(26, 221, 3, 1) 78%, rgba(0, 212, 255, 1) 100%);
+}
+
+section.copy {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+}
+
+section.copy p {
+	margin: 0px;
+}
