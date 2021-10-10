@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions">
+
+<h:head>
+	<h:outputStylesheet library="css" name="Principal.css"/>
+	<title>Principal</title>
+</h:head>
+<h:body>
+	<div class="container">
+		<h:form>
+			<p:button value="Ir a Ventas" outcome="Venta.xhtml"/>
+		</h:form>
+	</div>
+	<div class="commentFooter">
+		<footer>
+			<h:form>
+				<div class="commentHead">
+					<h1>Sección de comentarios</h1>
+				</div>
+				<div class="commentContainer">
+					<p:inputTextarea 	id="txtSlackPrin" placeholder="Envíanos un comentario"
+									cols="60" value="#{clienteBean.modelo.comment}">
+					</p:inputTextarea>
+				</div>
+				<div class="">
+					<p:commandButton value="Enviar"  actionListener="#{clienteBean.comment()}" update="txtSlackPrin"/>
+				</div>
+			</h:form>
+		</footer>
+    </div>
+</h:body>
+</html>
